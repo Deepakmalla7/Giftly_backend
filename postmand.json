@@ -1,0 +1,15 @@
+// http://localhost:5000/api/users/register
+{
+  "fname": "John",
+  "lname": "Doe",
+  "email": "john.doe@example.com",
+  "password": "password123",
+  "confirmPassword": "password123",
+  "phoneNumber": "+1234567890"
+}
+
+http://localhost:5000/api/users/login
+{
+  "email": "john.doe@example.com",
+  "password": "password123"
+}
