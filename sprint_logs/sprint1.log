@@ -5,3 +5,4 @@
 [2026-02-06T10:05:00+05:45] sprint1 commit 5: refactor(user): align dto and type for user payload
 [2026-02-06T15:45:00+05:45] sprint1 commit 6: feat(config): improve env parsing and config exports
 [2026-02-07T09:40:00+05:45] sprint1 commit 7: feat(db): improve mongodb bootstrap and startup logging
+[2026-02-08T10:15:00+05:45] sprint1 commit 8: test(auth): add setup and initial auth unit coverage
