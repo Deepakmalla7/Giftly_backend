@@ -1,2 +1,3 @@
 [2026-02-11T09:20:00+05:45] sprint2 commit 1: feat(gift): add gift model and dto foundation
 [2026-02-11T11:50:00+05:45] sprint2 commit 2: feat(gift): add repository and service for gift module
+[2026-02-12T09:35:00+05:45] sprint2 commit 3: feat(gift): add controller and routes for gift APIs
