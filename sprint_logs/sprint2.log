@@ -1,0 +1,10 @@
+[2026-02-11T09:20:00+05:45] sprint2 commit 1: feat(gift): add gift model and dto foundation
+[2026-02-11T11:50:00+05:45] sprint2 commit 2: feat(gift): add repository and service for gift module
+[2026-02-12T09:35:00+05:45] sprint2 commit 3: feat(gift): add controller and routes for gift APIs
+[2026-02-12T14:15:00+05:45] sprint2 commit 4: feat(book): align book service and repository contracts
+[2026-02-13T10:00:00+05:45] sprint2 commit 5: feat(book): improve book controller validation and errors
+[2026-02-13T16:25:00+05:45] sprint2 commit 6: feat(seed): add initial gift seed script
+[2026-02-14T09:45:00+05:45] sprint2 commit 7: feat(upload): add upload utility and route hook
+[2026-02-15T12:10:00+05:45] sprint2 commit 8: fix(gift): resolve dto mapping and response payload shape
+[2026-02-16T10:30:00+05:45] sprint2 commit 9: test(gift): add integration skeleton for gift routes
+[2026-02-16T18:35:00+05:45] sprint2 commit 10: chore(gift): finalize sprint2 gift and book module
