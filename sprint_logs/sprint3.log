@@ -1,0 +1,10 @@
+[2026-02-17T09:05:00+05:45] sprint3 commit 1: feat(cart): add cart model dto and type
+[2026-02-17T11:30:00+05:45] sprint3 commit 2: feat(cart): add cart repository and service methods
+[2026-02-18T09:40:00+05:45] sprint3 commit 3: feat(cart): add cart controller and routes
+[2026-02-18T14:20:00+05:45] sprint3 commit 4: feat(favorite): add favorite model dto and type
+[2026-02-19T10:15:00+05:45] sprint3 commit 5: feat(favorite): add favorite repository and service
+[2026-02-19T16:35:00+05:45] sprint3 commit 6: feat(favorite): add favorite controller and route wiring
+[2026-02-20T09:25:00+05:45] sprint3 commit 7: feat(review): add review model dto and type
+[2026-02-20T15:05:00+05:45] sprint3 commit 8: feat(review): add review repository service and controller
+[2026-02-21T11:45:00+05:45] sprint3 commit 9: feat(review): add review routes and index exports
+[2026-02-22T18:45:00+05:45] sprint3 commit 10: chore(cart-fav-review): finalize sprint3 consistency updates
