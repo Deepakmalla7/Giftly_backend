@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: giftly-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: giftly
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - giftly-network
+
+  backend:
+    build: .
+    container_name: giftly-backend
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongodb:27017/giftly
+      - JWT_SECRET=your_super_secret_jwt_key_here
+      - JWT_EXPIRES_IN=1h
+    depends_on:
+      - mongodb
+    networks:
+      - giftly-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  giftly-network:
+    driver: bridge
