@@ -5,3 +5,4 @@
 [2026-03-02T13:40:00+05:45] sprint5 commit 5: chore(ts): tighten tsconfig and lint-oriented cleanup
 [2026-03-03T09:50:00+05:45] sprint5 commit 6: docs(api): add backend sprint notes and API adjustments
 [2026-03-03T12:15:00+05:45] sprint5 commit 7: feat(security): improve token lifecycle checks
+[2026-03-03T16:20:00+05:45] sprint5 commit 8: fix(upload): harden file util and upload route limits
