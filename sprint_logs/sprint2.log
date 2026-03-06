@@ -7,3 +7,4 @@
 [2026-02-14T09:45:00+05:45] sprint2 commit 7: feat(upload): add upload utility and route hook
 [2026-02-15T12:10:00+05:45] sprint2 commit 8: fix(gift): resolve dto mapping and response payload shape
 [2026-02-16T10:30:00+05:45] sprint2 commit 9: test(gift): add integration skeleton for gift routes
+[2026-02-16T18:35:00+05:45] sprint2 commit 10: chore(gift): finalize sprint2 gift and book module
