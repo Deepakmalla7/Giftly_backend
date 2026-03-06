@@ -2,8 +2,6 @@ import express, { Application, Request, Response } from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import bookroute from './routes/book.route';
-import { PORT } from './configs';
-import { connectDB } from './database/mongodb';
 import authRO from './routes/user.route';
 import giftRoutes from './routes/gift.route';
 import adminRoutes from './routes/admin/user.route';
@@ -16,59 +14,38 @@ import { errorHandler, notFoundHandler } from './middlewares/error.middleware';
 const settingsRoutes = require('./routes/settings.routes');
 
 const app: Application = express();
-const port = PORT;
 
-connectDB();
 app.use(bodyParser.json());
 
 let corsOptions = {
     origin: ['http://localhost:3000', 'http://localhost:3001'],
     credentials: true,
-    optionsSuccessStatus: 200 
+    optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
 
-// Serve static files from src/uploads directory
 const uploadsDir = path.resolve(__dirname, './uploads');
 app.use('/uploads', express.static(uploadsDir));
-console.log('Serving static files from:', uploadsDir);
 
 app.get('/', (req: Request, res: Response) => {
     res.send("Giftly API - Server running successfully");
 });
 
-// Test endpoint to verify routes
 app.get('/api/test', (req: Request, res: Response) => {
     res.json({ message: "API routes are working", timestamp: new Date() });
 });
 
-app.use('/api/auth', authRO);  // Changed from /api/users to /api/auth for authentication routes
-console.log('Auth routes registered at /api/auth');
+app.use('/api/auth', authRO);
 app.use('/api/gifts', giftRoutes);
-console.log('Gift routes registered at /api/gifts');
 app.use('/api/settings', settingsRoutes);
-console.log('Settings routes registered at /api/settings');
 app.use('/api/books', bookroute);
-console.log('Book routes registered at /api/books');
 app.use('/api/admin/users', adminRoutes);
-console.log('Admin routes registered at /api/admin/users');
 app.use('/api/uploads', uploadRoutes);
-console.log('Upload routes registered at /api/uploads');
 app.use('/api/reviews', reviewRoutes);
-console.log('Review routes registered at /api/reviews');
 app.use('/api/cart', cartRoutes);
-console.log('Cart routes registered at /api/cart');
 app.use('/api/favorites', favoriteRoutes);
-console.log('Favorites routes registered at /api/favorites');
 
-// 404 handler must come before error handler
 app.use(notFoundHandler);
-
-// Global error handler must be last
 app.use(errorHandler);
-
-app.listen(port, () => {
-    console.log(`Listening on localhost:${port}`);
-});
 
 export default app;
