@@ -3,3 +3,4 @@
 [2026-03-01T15:15:00+05:45] sprint5 commit 3: fix(auth): tighten middleware edge-case handling
 [2026-03-02T09:25:00+05:45] sprint5 commit 4: test(routes): add integration coverage for user and gift routes
 [2026-03-02T13:40:00+05:45] sprint5 commit 5: chore(ts): tighten tsconfig and lint-oriented cleanup
+[2026-03-03T09:50:00+05:45] sprint5 commit 6: docs(api): add backend sprint notes and API adjustments
